@@ -1,1 +1,1 @@
-﻿
+﻿Use http://getcomposer.org to install libraries.

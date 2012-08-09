@@ -1,2 +1,5 @@
 ﻿{extends file="layout.tpl"}
-{block name=body}Hi there{/block}
+{block name=body}
+<h2>Example</h2>
+<div>Welcome, this is an example</div>
+{/block}

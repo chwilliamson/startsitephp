@@ -5,11 +5,12 @@
 		"smarty/smarty":"3.1.11"
     },
     "autoload": {
-         "files": [
+         "files": 
+                   [
                     "middleware/SlimmyView.php",                  
                     "vendor/slim/extras/Views/SmartyView.php",
                     "vendor/slim/slim/Slim/View.php"                    
-                    ]
+                   ]
 
     }
 

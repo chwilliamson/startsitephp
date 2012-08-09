@@ -1,6 +1,8 @@
 <?php
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
+
+    //see composer.json which loads libraries and middleware files
     require('vendor/autoload.php');
 
    //With custom settings	
@@ -8,19 +10,23 @@
 		'log.enable' => true,
 		'log.path' => 'logs/',
 		'log.level' => 4,
-        'view' => 'SlimmyView'
+        'view' => 'SlimmyView' // <- see Middleware
 	));  
        
     // Home GET route
-	$app->get('/','home');
+	$app->get('/','route_home');
     
     //home function
-    function home() {
+    function route_home() {
+       
+       //get the slim instance
        $app = Slim::getInstance();
-       $app->render('home.tpl');
+       
+       //render the home page and pass in a title
+       $app->render('home.tpl', array('title'=>'Site Starter'));
     }
 
-    $app->run();   
-    
+    //run the application
+    $app->run();    
 ?>
 

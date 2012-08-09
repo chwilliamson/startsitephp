@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title></title>
+        <title>{$title}</title>
     </head>
     <body>
         <h2>Example</h2>
