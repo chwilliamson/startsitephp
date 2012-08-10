@@ -8,6 +8,7 @@ class SlimmyView extends SmartyView
         //setup properties
        parent::$smartyDirectory = './vendor/smarty/smarty/distribution/libs/';
        parent::$smartyTemplatesDirectory = 'views';
+       parent::$smartyCompileDirectory = 'views_c';
        parent::__construct();
     }
 
