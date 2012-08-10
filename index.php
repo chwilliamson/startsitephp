@@ -13,19 +13,12 @@
         'view' => 'SlimmyView' // <- see Middleware
 	));  
        
-    // Home GET route
-	$app->get('/','route_home');
+    // GET
+	$app->get('/','home');
+	
+	//Note: routes are defined in ./middleware/routes.php which is autoloaded using
+	//composer.json    
     
-    //home function
-    function route_home() {
-       
-       //get the slim instance
-       $app = Slim::getInstance();
-       
-       //render the home page and pass in a title
-       $app->render('home.tpl', array('title'=>'Site Starter'));
-    }
-
     //run the application
     $app->run();    
 ?>

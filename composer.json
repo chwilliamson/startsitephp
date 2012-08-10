@@ -7,6 +7,7 @@
     "autoload": {
          "files": 
                    [
+				    "middleware/routes.php",
                     "middleware/SlimmyView.php",                  
                     "vendor/slim/extras/Views/SmartyView.php",
                     "vendor/slim/slim/Slim/View.php"                    
