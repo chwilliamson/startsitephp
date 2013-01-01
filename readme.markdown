@@ -4,8 +4,8 @@ This is a starter site in PHP that I use as my base starting site.
 
 It uses Slim for the routing engine and Smarty for the templating engine.
 
-* **Templating Engine (views)**: Slim ([Slim](https://github.com/codeguy/Slim))
-* **Routing (controller)**: Smarty ([Smarty](http://www.smarty.net/))
+* **Routing (controller)**: Slim ([Slim](https://github.com/codeguy/Slim))
+* **Templating Engine (views)**: Smarty ([Smarty](http://www.smarty.net/))
 
 I wanted to create sites for PHP 5.2 so I chose Smarty for my templating engine.
 
